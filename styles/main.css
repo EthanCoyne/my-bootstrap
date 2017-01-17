@@ -6,8 +6,33 @@
 #cat-photos div {
   overflow: hidden;
   max-height: 90px;
+  margin-bottom: 10px;
 }
 
 img {
   max-width: 130px;
+
+}
+
+body {
+  background-image: url("https://media0.giphy.com/media/W80Y9y1XwiL84/200.gif#22");
+  background-size: cover;
+}
+
+h1, p, li {
+  font-family: 'Yatra One', cursive;
+}
+
+.flash {
+   animation-name: flash;
+    animation-duration: 0.2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
+}
+
+@keyframes flash {
+    from {color: red;}
+    to {color: black;}
 }
